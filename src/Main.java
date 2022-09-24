@@ -1,8 +1,6 @@
-import classes.Ingrediente;
-import classes.MarcaProduto;
-import classes.MarcaProdutoUtilitario;
-import classes.nivelQualidade;
+import classes.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -38,6 +36,38 @@ public class Main {
         ingredientes[5] = new Ingrediente("Doce de leite", marcas[5]);
 
         ingredientes[0].retornaMarcaNivelQualidade();
+
+        Sabor[] sabores = new Sabor[3];
+
+        sabores[0] = new Sabor("Frutas vermelhas");
+        sabores[1] = new Sabor("Chocolate");
+        sabores[2] = new Sabor("Limão");
+
+        Textura[] texturas = new Textura[3];
+
+        texturas[0] = new Textura("Crocante");
+        texturas[1] = new Textura("Aveludado");
+        texturas[2] = new Textura("Cremoso");
+
+        Cobertura[] coberturas = new Cobertura[2];
+
+        List<Ingrediente>  ingredienteCobertuta = new ArrayList<Ingrediente>(1);
+        ingredienteCobertuta.add(ingredientes[2]);
+        List<Ingrediente>  ingredienteCobertuta2 = new ArrayList<Ingrediente>(2);
+        ingredienteCobertuta2.add(ingredientes[1]);
+        ingredienteCobertuta2.add(ingredientes[2]);
+
+        coberturas[0] = new Cobertura("Chantilly", sabores[2], texturas[1], "Decoração", ingredienteCobertuta);
+        coberturas[1] = new Cobertura("Ganache de chocolate", sabores[1], texturas[2], "Espelhado", ingredienteCobertuta2);
+
+        coberturas[0].listaIngredintes();
+        coberturas[0].listaIngredintes();
+        coberturas[0].adicionaIngrediente(ingredientes[1]);
+        coberturas[0].listaIngredintes();
+        coberturas[0].removeIngrediente(ingredientes[1]);
+        coberturas[0].retornaCobertura();
+
+        
 
 
 
