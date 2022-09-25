@@ -37,11 +37,12 @@ public class Main {
 
         ingredientes[0].retornaMarcaNivelQualidade();
 
-        Sabor[] sabores = new Sabor[3];
+        Sabor[] sabores = new Sabor[4];
 
         sabores[0] = new Sabor("Frutas vermelhas");
         sabores[1] = new Sabor("Chocolate");
         sabores[2] = new Sabor("Limão");
+        sabores[3] = new Sabor("Doce de leite");
 
         Textura[] texturas = new Textura[3];
 
@@ -67,7 +68,34 @@ public class Main {
         coberturas[0].removeIngrediente(ingredientes[1]);
         coberturas[0].retornaCobertura();
 
-        
+        Recheio[] recheios = new Recheio[2];
+
+        List<Ingrediente> ingredientesRecheio1 = new ArrayList<Ingrediente>(2);
+
+        ingredientesRecheio1.add(ingredientes[0]);
+        ingredientesRecheio1.add(ingredientes[1]);
+
+        List<Ingrediente> ingredientesRecheio2 = new ArrayList<Ingrediente>(2);
+
+        ingredientesRecheio2.add(ingredientes[5]);
+
+        recheios[0] = new Recheio("Brigadeiro", sabores[1], texturas[2], "classico", ingredientesRecheio1);
+        recheios[1] = new Recheio("Caramelo de doce de leite", sabores[3], texturas[0], "alternativo", ingredientesRecheio2);
+
+        recheios[0].retornaRecheio();
+
+        Massa[] massas = new Massa[2];
+
+        List<Ingrediente> ingredintesMassa = new ArrayList<Ingrediente>(3);
+        ingredintesMassa.add(ingredientes[3]);
+
+        massas[0] = new Massa("Pão de ló", sabores[2], texturas[1], "sustentação", ingredintesMassa);
+        massas[1] = new Massa("Chocolate", sabores[1], texturas[1], "criação de sabor", ingredintesMassa);
+
+        massas[0].retornaMassa();
+
+        Bolo[] bolos = new Bolo[2];
+
 
 
 
