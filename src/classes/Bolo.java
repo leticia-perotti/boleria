@@ -38,49 +38,50 @@ public class Bolo {
     }
 
     public void calculaValorMedio(){
-
+        double valor = this.recheios.size() * 15;
+        valor = valor + this.massas.size() * 7;
+        valor = valor + this.coberturas.size()  *18;
+        System.out.println("O valor do bolo é de " + valor);
     }
 
     public void adicionaRecheio(Recheio recheio){
-
+        this.recheios.add(recheio);
     }
 
     public void removeRecheio(Recheio recheio){
-
+        this.recheios.remove(recheio);
     }
 
     public void adicionaMassa(Massa massa){
-
+        this.massas.add(massa);
     }
 
     public void removeMassa(Massa massa){
-
+        this.massas.remove(massa);
     }
 
     public void adicionaCobertura(Cobertura cobertura){
-
+        this.coberturas.add(cobertura);
     }
 
     public void removeCobertura(Cobertura cobertura){
-
-    }
-
-    public void listaBolos(){
-
+        this.coberturas.remove(cobertura);
     }
 
     public void retornaBolo(){
-
+        System.out.println("Bolo; \n");
+        System.out.println("Recheios \n");
+        this.recheios.forEach(recheio ->{
+            System.out.println("* " + recheio.getNome() + "\n");
+        });
+        System.out.println("Massas \n");
+        this.massas.forEach(massa ->{
+            System.out.println("*" + massa.getNome() + "\n");
+        });
+        System.out.println("Coberturas \n");
+        this.coberturas.forEach(cobertura -> {
+            System.out.println("*" + cobertura.getNome() + "\n");
+        });
     }
 
-    public void listaBolosPorRecheio(){
-
-    }
-
-    public void listaBolosPorMassa(){
-
-    }
-    public void listaBolosPorCobertura(){
-
-    }
 }

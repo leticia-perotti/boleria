@@ -71,6 +71,13 @@ public class Decoracao {
     }
 
     public void retornaDecoracao(){
-
+        System.out.println("Decoração \n");
+        System.out.println("Cor:" + this.cor + "\n");
+        System.out.println("Tema:" + this.tema + "\n");
+        if (brilho) { System.out.println("Com brilho"); };
+        if (velas) { System.out.println("Com velas"); };
+        if (lacoDecorativo) { System.out.println("Com laço decorativo"); };
+        if (placaParabens) { System.out.println("Com placa de parabéns"); };
+        if (balaoDecorativo) { System.out.println("Com balão decorativo"); };
     }
 }
