@@ -1,4 +1,7 @@
-package classes;
+package classes.utilitarios;
+
+import classes.MarcaProduto;
+import classes.nivelQualidade;
 
 import java.util.List;
 

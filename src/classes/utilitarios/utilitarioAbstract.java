@@ -1,4 +1,8 @@
-package classes;
+package classes.utilitarios;
+
+import classes.Cobertura;
+import classes.Massa;
+import classes.Recheio;
 
 import java.util.List;
 

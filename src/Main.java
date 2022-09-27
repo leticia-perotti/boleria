@@ -1,4 +1,6 @@
 import classes.*;
+import classes.utilitarios.BolosUtilitario;
+import classes.utilitarios.MarcaProdutoUtilitario;
 
 import java.util.ArrayList;
 import java.util.List;
