@@ -96,8 +96,28 @@ public class Main {
 
         Bolo[] bolos = new Bolo[2];
 
+        bolos[0] = new Bolo(List.of(coberturas[1]), List.of(recheios[0]), List.of(massas[1]), "Floresta Negra");
+        bolos[1] = new Bolo(List.of(coberturas), List.of(recheios), List.of(massas), "Floresta selvagem");
 
+        bolos[0].retornaBolo();
+        Decoracao decoracao = new Decoracao("Rosa", "Flores");
 
+        decoracao.setBalaoDecorativo(false);
+        decoracao.setBrilho(true);
+        decoracao.setVelas(false);
+        decoracao.setLacoDecorativo(false);
+
+        BoloAniversario boloAniversario = new BoloAniversario(List.of(coberturas[0]), List.of(recheios), List.of(massas), decoracao, "Rose e Jack");
+
+        boloAniversario.retornaBolo();
+
+        BolosUtilitario bolosUtilitario = new BolosUtilitario();
+
+        bolosUtilitario.listaBolosPorRecheio(List.of(bolos));
+
+        bolosUtilitario.listaBolosPorCobertura(List.of(bolos));
+
+        bolosUtilitario.listaBolosPorMassa(List.of(bolos));
 
     }
 }

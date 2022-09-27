@@ -13,8 +13,8 @@ public class BoloAniversario extends Bolo{
         this.decoracao = decoracao;
     }
 
-    public BoloAniversario(List<Cobertura> coberturas, List<Recheio> recheios, List<Massa> massas, Decoracao decoracao) {
-        super(coberturas, recheios, massas);
+    public BoloAniversario(List<Cobertura> coberturas, List<Recheio> recheios, List<Massa> massas, Decoracao decoracao, String nome) {
+        super(coberturas, recheios, massas, nome);
         this.decoracao = decoracao;
     }
 

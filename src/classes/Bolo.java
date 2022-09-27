@@ -3,14 +3,16 @@ package classes;
 import java.util.List;
 
 public class Bolo {
+    private String nome;
     private List<Cobertura> coberturas;
     private List<Recheio> recheios;
     private List<Massa> massas;
 
-    public Bolo(List<Cobertura> coberturas, List<Recheio> recheios, List<Massa> massas) {
+    public Bolo(List<Cobertura> coberturas, List<Recheio> recheios, List<Massa> massas, String nome) {
         this.coberturas = coberturas;
         this.recheios = recheios;
         this.massas = massas;
+        this.nome = nome;
     }
 
     public List<Cobertura> getCoberturas() {
@@ -84,4 +86,11 @@ public class Bolo {
         });
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 }

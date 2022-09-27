@@ -25,6 +25,13 @@ abstract class Abstract {
         });
     }
 
+    public void listaIngredintesMarca(){
+        System.out.println("Nome: " + this.nome + " - ingredientes");
+        this.ingredientes.forEach( ingrediente -> {
+            System.out.println("* " + ingrediente.getNome() + "-" + ingrediente.getMarca().getNome() + "\n");
+        });
+    }
+
     public String getNome() {
         return nome;
     }
