@@ -6,7 +6,7 @@ import classes.Recheio;
 
 import java.util.List;
 
-public class utilitarioAbstract {
+public class UtilitarioAbstract {
 
     public void retornaOpcoesMontagemBolo(List<Massa> massas, List<Recheio> recheios, List<Cobertura> coberturas){
         System.out.println("Massas: \n");
